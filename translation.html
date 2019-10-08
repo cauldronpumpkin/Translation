@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="form_style.css">
+	<title>Translation</title>
+</head>
+<body>
+	<center><h1 class="f">From(Language) :</h1><input class="h" type="text" id="from"><br><br>
+	<h1 class="f">To(Language) :</h1><input class="h" type="text" id="to"><br><br>
+	<h1 class="f">Input :</h1><input class="h" type="text" id="input"><br><br>
+	<button  class="submit" onclick="transla()">Translate</button><br><br><br><br>
+
+
+	<h1 id="nalla"></h1>
+
+<script type="text/javascript">
+
+function create(element) {
+	return document.createElement(element);
+}
+var link = 'https://systran-systran-platform-for-language-processing-v1.p.rapidapi.com/translation/text/translate?source=';
+function transla() {
+	var from = document.getElementById("from").value;
+	var to = document.getElementById("to").value;
+	var input = document.getElementById("input").value;
+	fetch(link.concat(from,"&target=",to,"&input=",input), {
+		"method": "GET",
+		"headers": {
+			"x-rapidapi-host": "systran-systran-platform-for-language-processing-v1.p.rapidapi.com",
+			"x-rapidapi-key": "0ebeeb5e11mshb5c0a473091cab6p13577fjsnc3857b1f6e6d"
+		}
+	})
+	.then(res => res.json()) 
+	.then(function (data) {
+		let translation = data.outputs;
+		console.log(translation);
+		return translation.map(function (trans) {
+			document.getElementById("nalla").innerHTML = trans.output;
+		})	
+	})
+}
+</script>
+
+</body>
+</html>
