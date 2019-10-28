@@ -8,7 +8,7 @@ h1{
 	color: white;
 	font-family: monospace;
 	text-align: center;
-
+	font: italic bold 30px/30px Georgia, serif;
 }
 #from {
 	height: 35px;
@@ -17,6 +17,9 @@ h1{
 	border-radius: 15px;
 	text-align: center;
 	font-size: 25px;
+	border-width: 3px;
+	border-color: red;
+	font: italic bold 30px/30px Georgia, serif;
 }
 #to {
 	height: 35px;
@@ -25,15 +28,20 @@ h1{
 	border-radius: 12px;
 	text-align: center;
 	font-size: 25px;
+	border-width: 3px;
+	border-color: green;
+	font: italic bold 30px/30px Georgia, serif;
 }
 #input {
 	color: blue;
 	width: 500px;
 	height: 40px;
-	border: 2px;
 	border-radius: 15px 50px;
 	text-align: center;
 	font-size: 25px;
+	border-width: 3px;
+	border-color: blue;
+	font: italic bold 30px/30px Georgia, serif;
 }
 .submit{
 	background-color: black;
@@ -42,6 +50,8 @@ h1{
 	border: 2px;
 	color: white;
 	font-size: 25px;
+	border-radius: 15px;
+	font: italic bold 30px/30px Georgia, serif;
 
 }
 #nalla{
