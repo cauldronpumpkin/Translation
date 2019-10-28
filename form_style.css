@@ -5,13 +5,22 @@
 }
 h1{
 	font-size: 30px;
+	color: white;
 	font-family: monospace;
 	text-align: center;
 
 }
-
+#from {
+	color: red;
+}
+#to {
+	color: green;
+}
+#input {
+	color: blue;
+}
 .submit{
-	background-color: black;
+	background-color: grey;
 	width: 120px;
 	height: 35px;
 	border: 0px;
@@ -20,8 +29,10 @@ h1{
 #nalla{
 	font-family: monospace;
 	font-style: italic;
-	color: red;
+	color: white;
 	text-align: center;
-	color: black;
-	font-size: 37px;
+	font-size: 80px;
+}
+body {
+	background-image: url("globe_sculpture_architecture_113722_1920x1080.jpg");
 }
